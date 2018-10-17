@@ -1,0 +1,298 @@
+* {
+	box-sizing: border-box;
+	font-family: "Inconsolata", Monaco, monospace;
+	color: #eeeeee;
+	margin: 0;
+	-webkit-user-select: none; /* Chrome all / Safari all */
+	-moz-user-select: none; /* Firefox all */
+	-ms-user-select: none; /* IE 10+ */
+	user-select: none;
+	-webkit-user-select: none; /* Likely future */
+}
+
+html {
+	font-size: 62.5%;
+	line-height: 1.4rem;
+	white-space: nowrap;
+}
+
+input {
+	-webkit-user-select: auto; /* Chrome all / Safari all */
+	-moz-user-select: auto; /* Firefox all */
+	-ms-user-select: auto; /* IE 10+ */
+	user-select: auto;
+	-webkit-user-select: auto; /* Likely future */
+	background-color: #71797F;
+	text-align: center;
+	border: none;
+	font-size: 2.4rem;
+}
+
+/*Body ************************************************************/
+body {
+	font-size: 1.5rem;
+	min-width: 1500px;
+	background-image:
+		url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/570/849332de33c9feb608ee04ed918a9a56e08a87b5.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* Create N equal columns that floats next to each other *****/
+div.column1, div.column2, div.column3, div.column4, div.column5, div.columnCenter,
+	div.columnPad {
+	float: left;
+	height: 100%;
+	padding: .25rem;
+	font-size: 2.2rem;
+	text-align: center;
+}
+
+div.column1 {
+	width: 100%;
+	min-width: 93.3333rem;
+}
+
+div.column2 {
+	width: 50%;
+	min-width: 35rem;
+}
+
+div.column3 {
+	width: 33.3333%;
+	min-width: 23.3333rem;
+}
+
+div.column4 {
+	width: 25%;
+	min-width: 17.5rem;
+}
+
+div.column5 {
+	width: 20%;
+	min-width: 14rem;
+}
+
+div.columnCenter {
+	width: 75%;
+	min-width: 70rem;
+}
+
+div.columnPad {
+	width: 12.5%;
+	min-width: 0%;
+}
+
+/* Clear floats after the columns *********************************/
+div.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*Non-column ******************************************************/
+div.title {
+	position: relative;
+	float: left;
+	font-size: 5rem;
+	text-align: center;
+	width: 100%;
+	height: 10%;
+	padding: 2.4rem 2.4rem;
+	text-shadow: -1px 0px 0 #000, 1px 0px 2px #000, -1px -1px 2px #000, -1px
+		1px 2px #000, 1px 1px 2px #000, 1px -1px 2px #000, 0px 1px 2px #000,
+		0px -1px 2px #000;
+}
+
+/*Tables **********************************************************/
+table, table.mini, table.ranks {
+	border-collapse: collapse;
+	border: none;
+	background: transparent;
+}
+
+table {
+	/*background-color: #2C3135;*/
+	width: 100%;
+}
+
+th.buttons {
+	background-color: transparent;
+	padding: 0;
+	width: 50%;
+}
+
+th {
+	font-size: 2.4rem;
+}
+
+th, td {
+	height: 100%;
+	background-color: #71797F;
+}
+
+.header {
+	text-align: center;
+	width: 100%;
+	border-bottom: .25rem solid #11191F;
+	width: 100%;
+	font-size: 3rem;
+	background-color: #3E484F;
+	padding: .75rem;
+}
+/*Rule Format*/
+tr.ruleBreak {
+	border-top: .25rem solid #11191F;
+	border-bottom: .25rem solid #11191F;
+	background-color: #566067;
+}
+
+tr.ruleBreak>.ruleNum, tr.ruleBreak>.ruleDesc {
+	background-color: transparent;
+	font-size: 2rem;
+}
+
+td.rulePre {
+	width: 100%;
+	text-align: center;
+	vertical-align: top;
+	font-size: 2rem;
+	padding: .75rem;
+}
+
+.ruleNum, .ruleDesc {
+	vertical-align: top;
+}
+
+.ruleNum {
+	text-align: right;
+	border-right: .25rem solid #11191F;
+	width: 5%;
+	font-size: 1.7rem;
+	padding: .5rem;
+}
+
+.ruleDesc {
+	text-align: left;
+	white-space: normal;
+	overflow: visible;
+	width: 95%;
+	font-size: 1.6rem;
+	padding: .75rem;
+}
+
+/*Staff Format*/
+.NA, .EU, .SEA {
+	width: 33.3333%;
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+th.NA, th.EU, th.SEA {
+	background-color: transparent;
+}
+
+.NA {
+	border-right: .25rem solid #11191F;
+}
+
+.EU {
+	border-right: .25rem solid #11191F;
+	border-left: .25rem solid #11191F;
+}
+
+.SEA {
+	border-left: .25rem solid #11191F;
+}
+
+div.center {
+	text-align: center;
+}
+
+div.ranks {
+	text-align: center;
+}
+
+table.ranks {
+	height: 678px;
+	width: 752px;
+	display: inline-block;
+	background-color: #3E484F;
+	border-radius: 1rem;
+}
+
+th.ranks {
+	padding: 0;
+	background: transparent;
+}
+
+div.iframe, div.iframeData {
+	overflow: hidden;
+	width: 752px;
+	display: inline-block;
+	text-align: center;
+	border-color: #394146;
+	
+}
+
+div.iframe {
+	height: 60px;
+	border-radius: 1rem 1rem 0 0;
+	background-color: transparent;
+}
+
+div.iframeData {
+	height: 625px;
+	border-radius: 0 0 1rem 1rem;
+	background-color: transparent;
+}
+
+iframe {
+	display: inline-block;
+	width: 900px;
+	padding: 0;
+	border: 0;
+	height: 100%;
+}
+/*Button **********************************************************/
+button {
+	width: 90%;
+	height: 100%;
+	background-color: #394146;
+	border: solid;
+	border-color: #394146;
+	font-size: 2.4rem;
+	padding: 1rem;
+	border-radius: .5rem;
+}
+
+button.table {
+	width: 50%;
+}
+
+div.buttonL, div.buttonR {
+	width: 100%;
+	padding: 1rem
+	display: inline-block;
+}
+
+div.buttonL {
+	text-align: right;
+}
+
+
+th.pageNum {
+	display: inline-block;
+	width: 100%;
+	border-radius: .5rem;
+	padding: 1.5rem;
+	height: 100%;
+}
+div.buttonR {
+	text-align: left;
+}
+
+button:hover {
+	background-color: #566067;
+}
